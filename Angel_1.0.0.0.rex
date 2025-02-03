@@ -1,5 +1,14 @@
-/* REXX Program to Compress and Extract Binary Data */
-SAY "Welcome to the Binary Data Compressor and Extractor!"
+/* REXX Program: Angel_1.0.0.0.rex */
+/* Ensure the script is running with the correct name */
+PARSE SOURCE . . script_name .
+IF script_name \= 'Angel_1.0.0.0.rex' THEN DO
+    SAY "This is not 'Angel_1.0.0.0.rex'."
+    EXIT
+END
+SAY "The script 'Angel_1.0.0.0.rex' is currently running."
+
+/* Program Header */
+SAY "Created by Jurijus Pacalovas. Welcome to the Binary Data Compressor and Extractor! Angel_1.0.0.0"
 
 /* Ask user for input and output file names */
 PARSE UPPER VAR user_input "Enter input file name: " input_file
